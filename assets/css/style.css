@@ -11113,5 +11113,12 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+* {
+  font-family: "Lato", sans-serif;
+}
+
+header li {
+  list-style-type: none;
+}
 
 /*# sourceMappingURL=style.css.map */
