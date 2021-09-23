@@ -17335,4 +17335,26 @@ nav .nav-list .text-nav .text-nav-text::after {
   box-shadow: 0 0.75em 0 0 #584096, 0 1.5em 0 0 #584096;
 }
 
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-container {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+.copyright {
+  background-color: #584096;
+  color: white;
+}
+
 /*# sourceMappingURL=style.css.map */
