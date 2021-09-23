@@ -17251,6 +17251,12 @@ nav .nav-list .text-nav-link, nav .nav-list .phone-nav-link {
   text-decoration: none;
   color: inherit;
 }
+nav .nav-list .text-nav-link-container, nav .nav-list .phone-nav-link-container {
+  display: inline-block;
+  padding: 5px 5px;
+  border: 1px solid white;
+  background-color: #584096;
+}
 @media (min-width: 992px) {
   nav .nav-list .text-nav, nav .nav-list .phone-nav {
     display: inline-flex;
@@ -17258,6 +17264,18 @@ nav .nav-list .text-nav-link, nav .nav-list .phone-nav-link {
 }
 nav .nav-list .phone-nav {
   font-weight: bolder;
+  color: white;
+}
+nav .nav-list .phone-nav .icon-container {
+  display: inline-block;
+  border: 1px solid white;
+  background-color: white;
+  height: 32px;
+  border-radius: 50%;
+}
+nav .nav-list .phone-nav .icon-container .fa-phone {
+  color: #584096;
+  padding: 8px;
 }
 
 .hamburger {
