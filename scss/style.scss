@@ -4,4 +4,9 @@
 //Imports components
 @use 'components/typography';
 
+//Font awesome imports
+@use 'fa-code/fontawesome.scss';
+@use 'fa-code/solid.scss';
+
 //Imports sections
+@use 'sections/header';

@@ -1,0 +1,132 @@
+@use '../custom' as *;
+
+header {
+    display: flex;
+    width: 100%;
+    height: 100px;
+}
+
+nav {
+    width: 50%;
+    display: inline-block;
+    @media (min-width: map-get($grid-breakpoints, "lg" )) {
+        width: 100%;
+    }
+    .nav-list {
+        height: 100%;
+        padding: 10px 15px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        @media (min-width: map-get($grid-breakpoints, "lg" )) {
+            display: flex;
+            justify-content: space-around;
+        }
+        .logo {
+            height: 100%;
+            &-link {
+                display: inline-flex;
+                align-items: center;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+                width: 100%;
+                height: 100%;
+            }
+            &-image {
+                height: 80%;
+                @media (min-width: map-get($grid-breakpoints, "sm" )) {
+                    margin-left: 20%;
+                    height: 100%;
+                }
+            }
+        }
+        .text-nav, .phone-nav {
+            display: none;
+            align-items: center;
+            &-link {
+                text-decoration: none;
+                color: inherit;
+            }
+            @media (min-width: map-get($grid-breakpoints, "lg" )) {
+                display: inline-flex;
+            }
+        }
+        .phone-nav {
+            font-weight: bolder;
+            color: white;
+            &-link-container {
+                display: inline-block;
+                padding: 5px 5px;
+                border: 1px solid white;
+                background-color: #584096;
+                border-radius: .25em;
+            }
+            .icon-container {
+                display: inline-block;
+                border: 1px solid white;
+                background-color: white;
+                height: 32px;
+                border-radius: 50%;
+                .fa-phone {
+                    color: #584096;
+                    padding: 8px;
+                }
+            }
+        }
+        .text-nav {
+            &:hover {
+                .text-nav-text {
+                    transition: color .3s ease-in;
+                    &::after {
+                        opacity: 100%;
+                        transition: opacity .3s ease-in
+                    }
+                }
+            }
+            .text-nav-text {
+                //Set link text width to be equal to content
+                display: table;
+                position: relative;
+                &::after {
+                    //Create underline effect for text
+                    content: '';
+                    display: block;
+                    opacity: 0%;
+                    position: absolute;
+                    background-color: #584096;
+                    height: 2px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.hamburger {
+    display: inline-block;
+    border: none;
+    background: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 10%;
+    margin-left: auto;
+    text-decoration: none;
+    position: relative;
+    padding-left: 1.25em;
+    @media (min-width: map-get($grid-breakpoints, "lg" )) {
+        display: none;
+    }
+}
+
+.hamburger:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: calc(50% - 1.125em);
+    width: 2em;
+    height: 0.4em;
+    background: #584096;
+    box-shadow: 
+      0 0.75em 0 0 #584096,
+      0 1.5em 0 0 #584096;
+}

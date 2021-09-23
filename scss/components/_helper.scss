@@ -1,0 +1,6 @@
+@use '../custom' as *;
+
+.visually-hidden {
+    //Use this to hide text that exists for accessibility reasons.
+    display: none;
+}
