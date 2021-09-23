@@ -17243,6 +17243,12 @@ nav .nav-list .logo-link {
 nav .nav-list .logo-image {
   height: 80%;
 }
+@media (min-width: 576px) {
+  nav .nav-list .logo-image {
+    margin-left: 20%;
+    height: 100%;
+  }
+}
 nav .nav-list .text-nav, nav .nav-list .phone-nav {
   display: none;
   align-items: center;
@@ -17256,6 +17262,7 @@ nav .nav-list .text-nav-link-container, nav .nav-list .phone-nav-link-container 
   padding: 5px 5px;
   border: 1px solid white;
   background-color: #584096;
+  border-radius: 0.25em;
 }
 @media (min-width: 992px) {
   nav .nav-list .text-nav, nav .nav-list .phone-nav {
@@ -17282,7 +17289,10 @@ nav .nav-list .phone-nav .icon-container .fa-phone {
   display: inline-block;
   border: none;
   background: white;
-  padding: 1rem 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 10%;
   margin-left: auto;
   text-decoration: none;
   position: relative;
