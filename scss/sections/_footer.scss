@@ -1,0 +1,39 @@
+@use '../custom' as *;
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-container {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+.copyright {
+    background-color: #584096;
+    &-text {
+        padding: 0.5rem;
+        margin-bottom: 0;
+    }
+}
+
+.site-footer {
+    padding-top: 30px;
+    padding-bottom: 30px;;
+    &-header {
+        margin-bottom: 20px;
+    }
+    .contact-footer {
+        padding-left: 0;
+        padding-inline-start: 0;
+        list-style-type: none;
+    }
+}

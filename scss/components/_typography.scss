@@ -10,3 +10,39 @@ header {
         color: #584096;
     }
 }
+
+.copyright-text {
+    color: white;
+    text-align: center;
+    font-size: 0.75rem;
+    @media (min-width: map-get($grid-breakpoints, "md" )) {
+        font-size: 1rem;
+    }
+}
+
+.site-footer {
+    &-header {
+        font-weight: 600;
+        font-size: 26px;
+        color: #584096;
+    }
+    .contact-title {
+        font-weight: bolder;
+    }
+    .nav-footer, .socials-footer {
+        margin-left: 1em;
+    }
+    .fa-chevron-right, .fa-facebook-square, .fa-twitter, .fa-linkedin {
+        width: auto;
+        left: -1em;
+    }
+    .fa-facebook-square {
+        color: #3b5998;
+    }
+    .fa-twitter {
+        color: #1DA1F2;
+    }
+    .fa-linkedin {
+        color: #2867B2;
+    }
+}

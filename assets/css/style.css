@@ -617,7 +617,6 @@ progress {
 
 .container,
 .container-fluid,
-.container-xxl,
 .container-xl,
 .container-lg,
 .container-md,
@@ -647,11 +646,6 @@ progress {
 @media (min-width: 1200px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1140px;
-  }
-}
-@media (min-width: 1400px) {
-  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1320px;
   }
 }
 .row {
@@ -3934,8 +3928,7 @@ textarea.form-control-lg {
 .navbar > .container-sm,
 .navbar > .container-md,
 .navbar > .container-lg,
-.navbar > .container-xl,
-.navbar > .container-xxl {
+.navbar > .container-xl {
   display: flex;
   flex-wrap: inherit;
   align-items: center;
@@ -11122,6 +11115,42 @@ header .nav-list {
   color: #584096;
 }
 
+.copyright-text {
+  color: white;
+  text-align: center;
+  font-size: 0.75rem;
+}
+@media (min-width: 768px) {
+  .copyright-text {
+    font-size: 1rem;
+  }
+}
+
+.site-footer-header {
+  font-weight: 600;
+  font-size: 26px;
+  color: #584096;
+}
+.site-footer .contact-title {
+  font-weight: bolder;
+}
+.site-footer .nav-footer, .site-footer .socials-footer {
+  margin-left: 1em;
+}
+.site-footer .fa-chevron-right, .site-footer .fa-facebook-square, .site-footer .fa-twitter, .site-footer .fa-linkedin {
+  width: auto;
+  left: -1em;
+}
+.site-footer .fa-facebook-square {
+  color: #3b5998;
+}
+.site-footer .fa-twitter {
+  color: #1DA1F2;
+}
+.site-footer .fa-linkedin {
+  color: #2867B2;
+}
+
 /*!
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -17202,13 +17231,34 @@ readers do not read off random characters that represent icons */
   font-weight: 900;
 }
 
+/*!
+ * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face {
+  font-family: "Font Awesome 5 Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../../assets/webfonts/fa-brands-400.eot");
+  src: url("../../assets/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../../assets/webfonts/fa-brands-400.woff2") format("woff2"), url("../../assets/webfonts/fa-brands-400.woff") format("woff"), url("../../assets/webfonts/fa-brands-400.ttf") format("truetype"), url("../../assets/webfonts/fa-brands-400.svg#fontawesome") format("svg");
+}
+.fab {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+}
+
 header {
   display: flex;
   width: 100%;
   height: 100px;
 }
+header .row {
+  height: 100%;
+}
 
 nav {
+  height: 100%;
   width: 50%;
   display: inline-block;
 }
@@ -17219,14 +17269,16 @@ nav {
 }
 nav .nav-list {
   height: 100%;
-  padding: 10px 15px;
+  padding-left: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 @media (min-width: 992px) {
   nav .nav-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 nav .nav-list .logo {
@@ -17245,7 +17297,6 @@ nav .nav-list .logo-image {
 }
 @media (min-width: 576px) {
   nav .nav-list .logo-image {
-    margin-left: 20%;
     height: 100%;
   }
 }
@@ -17305,6 +17356,12 @@ nav .nav-list .text-nav .text-nav-text::after {
   width: 100%;
 }
 
+.hamburger-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hamburger {
   display: inline-block;
   border: none;
@@ -17333,6 +17390,44 @@ nav .nav-list .text-nav .text-nav-text::after {
   height: 0.4em;
   background: #584096;
   box-shadow: 0 0.75em 0 0 #584096, 0 1.5em 0 0 #584096;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-container {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+.copyright {
+  background-color: #584096;
+}
+.copyright-text {
+  padding: 0.5rem;
+  margin-bottom: 0;
+}
+
+.site-footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.site-footer-header {
+  margin-bottom: 20px;
+}
+.site-footer .contact-footer {
+  padding-left: 0;
+  padding-inline-start: 0;
+  list-style-type: none;
 }
 
 /*# sourceMappingURL=style.css.map */
