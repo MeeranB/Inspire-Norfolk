@@ -19,5 +19,21 @@ footer {
 
 .copyright {
     background-color: #584096;
-    color: white;
+    &-text {
+        padding: 0.5rem;
+        margin-bottom: 0;
+    }
+}
+
+.site-footer {
+    padding-top: 30px;
+    padding-bottom: 30px;;
+    &-header {
+        margin-bottom: 20px;
+    }
+    .contact-footer {
+        padding-left: 0;
+        padding-inline-start: 0;
+        list-style-type: none;
+    }
 }
