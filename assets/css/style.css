@@ -17257,13 +17257,6 @@ nav .nav-list .text-nav-link, nav .nav-list .phone-nav-link {
   text-decoration: none;
   color: inherit;
 }
-nav .nav-list .text-nav-link-container, nav .nav-list .phone-nav-link-container {
-  display: inline-block;
-  padding: 5px 5px;
-  border: 1px solid white;
-  background-color: #584096;
-  border-radius: 0.25em;
-}
 @media (min-width: 992px) {
   nav .nav-list .text-nav, nav .nav-list .phone-nav {
     display: inline-flex;
@@ -17272,6 +17265,13 @@ nav .nav-list .text-nav-link-container, nav .nav-list .phone-nav-link-container 
 nav .nav-list .phone-nav {
   font-weight: bolder;
   color: white;
+}
+nav .nav-list .phone-nav-link-container {
+  display: inline-block;
+  padding: 5px 5px;
+  border: 1px solid white;
+  background-color: #584096;
+  border-radius: 0.25em;
 }
 nav .nav-list .phone-nav .icon-container {
   display: inline-block;
@@ -17283,6 +17283,26 @@ nav .nav-list .phone-nav .icon-container {
 nav .nav-list .phone-nav .icon-container .fa-phone {
   color: #584096;
   padding: 8px;
+}
+nav .nav-list .text-nav:hover .text-nav-text {
+  transition: color 0.3s ease-in;
+}
+nav .nav-list .text-nav:hover .text-nav-text::after {
+  opacity: 100%;
+  transition: opacity 0.3s ease-in;
+}
+nav .nav-list .text-nav .text-nav-text {
+  display: table;
+  position: relative;
+}
+nav .nav-list .text-nav .text-nav-text::after {
+  content: "";
+  display: block;
+  opacity: 0%;
+  position: absolute;
+  background-color: #584096;
+  height: 2px;
+  width: 100%;
 }
 
 .hamburger {

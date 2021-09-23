@@ -46,13 +46,6 @@ nav {
                 text-decoration: none;
                 color: inherit;
             }
-            &-link-container {
-                display: inline-block;
-                padding: 5px 5px;
-                border: 1px solid white;
-                background-color: #584096;
-                border-radius: .25em;
-            }
             @media (min-width: map-get($grid-breakpoints, "lg" )) {
                 display: inline-flex;
             }
@@ -60,6 +53,13 @@ nav {
         .phone-nav {
             font-weight: bolder;
             color: white;
+            &-link-container {
+                display: inline-block;
+                padding: 5px 5px;
+                border: 1px solid white;
+                background-color: #584096;
+                border-radius: .25em;
+            }
             .icon-container {
                 display: inline-block;
                 border: 1px solid white;
@@ -69,6 +69,32 @@ nav {
                 .fa-phone {
                     color: #584096;
                     padding: 8px;
+                }
+            }
+        }
+        .text-nav {
+            &:hover {
+                .text-nav-text {
+                    transition: color .3s ease-in;
+                    &::after {
+                        opacity: 100%;
+                        transition: opacity .3s ease-in
+                    }
+                }
+            }
+            .text-nav-text {
+                //Set link text width to be equal to content
+                display: table;
+                position: relative;
+                &::after {
+                    //Create underline effect for text
+                    content: '';
+                    display: block;
+                    opacity: 0%;
+                    position: absolute;
+                    background-color: #584096;
+                    height: 2px;
+                    width: 100%;
                 }
             }
         }
@@ -103,4 +129,4 @@ nav {
     box-shadow: 
       0 0.75em 0 0 #584096,
       0 1.5em 0 0 #584096;
-  }
+}
