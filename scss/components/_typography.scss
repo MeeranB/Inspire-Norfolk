@@ -11,14 +11,44 @@ header {
     }
 }
 
-.copyright-text {
-    color: white;
-    text-align: center;
-    font-size: 0.75rem;
-    @media (min-width: map-get($grid-breakpoints, "md" )) {
-        font-size: 1rem;
+.partnership {
+    h2, p {
+        text-align: center;
+    }
+    h2 {
+        font-weight: 600;
+        font-size: 1.75rem;
+        color: #584096;
+        margin-bottom: 28px;
+    }
+    p {
+        font-size: 19px;
+        font-weight: 300;
     }
 }
+
+.get-in-touch {
+    p {
+        font-size: 17px;
+        color: white;
+        font-weight: 300;
+        line-height: 1.5;
+    }
+    a {
+        text-decoration: none;
+        &:hover {
+            .btn-container {
+                color: white;
+            }
+        }
+    }
+    .btn-container {
+        color: #584096;
+        font-weight: 600;
+        font-size: 24px;
+    }
+}
+
 
 .site-footer {
     &-header {
@@ -44,5 +74,14 @@ header {
     }
     .fa-linkedin {
         color: #2867B2;
+    }
+}
+
+.copyright-text {
+    color: white;
+    text-align: center;
+    font-size: 0.75rem;
+    @media (min-width: map-get($grid-breakpoints, "md" )) {
+        font-size: 1rem;
     }
 }

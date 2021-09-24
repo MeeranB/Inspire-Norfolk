@@ -11115,15 +11115,36 @@ header .nav-list {
   color: #584096;
 }
 
-.copyright-text {
-  color: white;
+.partnership h2, .partnership p {
   text-align: center;
-  font-size: 0.75rem;
 }
-@media (min-width: 768px) {
-  .copyright-text {
-    font-size: 1rem;
-  }
+.partnership h2 {
+  font-weight: 600;
+  font-size: 1.75rem;
+  color: #584096;
+  margin-bottom: 28px;
+}
+.partnership p {
+  font-size: 19px;
+  font-weight: 300;
+}
+
+.get-in-touch p {
+  font-size: 17px;
+  color: white;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.get-in-touch a {
+  text-decoration: none;
+}
+.get-in-touch a:hover .btn-container {
+  color: white;
+}
+.get-in-touch .btn-container {
+  color: #584096;
+  font-weight: 600;
+  font-size: 24px;
 }
 
 .site-footer-header {
@@ -11149,6 +11170,17 @@ header .nav-list {
 }
 .site-footer .fa-linkedin {
   color: #2867B2;
+}
+
+.copyright-text {
+  color: white;
+  text-align: center;
+  font-size: 0.75rem;
+}
+@media (min-width: 768px) {
+  .copyright-text {
+    font-size: 1rem;
+  }
 }
 
 /*!
@@ -17428,6 +17460,36 @@ footer {
   padding-left: 0;
   padding-inline-start: 0;
   list-style-type: none;
+}
+
+.partnership {
+  margin-top: 56px;
+  margin-bottom: 40px;
+}
+
+.get-in-touch {
+  padding: 30px 0;
+  background-color: #584096;
+}
+.get-in-touch p {
+  margin-bottom: 0;
+}
+.get-in-touch a {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+.get-in-touch a:hover .btn-container {
+  background-color: #584096;
+  border-color: white;
+}
+
+.btn-container {
+  background-color: white;
+  width: 90%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
