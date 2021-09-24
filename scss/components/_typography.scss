@@ -11,6 +11,19 @@ header {
     }
 }
 
+.services-header {
+    color: white;
+    h2 {
+        padding-top: 0;
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+    span {
+        font-weight: 300;
+    }
+}
+
 .partnership {
     h2, p {
         text-align: center;

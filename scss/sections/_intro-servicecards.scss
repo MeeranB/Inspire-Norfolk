@@ -1,1 +1,41 @@
 @use '../custom' as *;
+
+.service-cards-container {
+    background-color: #584096;
+    padding-top: 70px;
+    padding-bottom: 60px;
+    height: 100vh;
+}
+
+.services-header {
+    display: flex;
+    flex-direction: column;
+    h2 {
+        padding-bottom: 1.5rem;
+        &::after {
+            content: "";
+            display: block;
+            width: 30%;
+            padding-top: 3px;
+            border-bottom: 2px solid #f9dd94;
+          }
+    }
+    @media (min-width: map-get($grid-breakpoints, "md")) {
+        justify-content: space-between;
+        span {
+            padding-top: 8px;
+            width: 70%;
+        }
+    }
+    @media (min-width: map-get($grid-breakpoints, "lg" )) {
+        flex-direction: row;
+        h2 {
+            &::after {
+                width: 70%;
+            }
+        }
+        span {
+            width: 75%;
+        }
+    }
+}
