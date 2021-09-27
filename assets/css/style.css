@@ -11128,6 +11128,10 @@ header .nav-list {
   font-weight: 300;
 }
 
+.service-card-content {
+  text-align: center;
+}
+
 .partnership h2, .partnership p {
   text-align: center;
 }
@@ -17293,12 +17297,12 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
-header {
+.main-header {
   display: flex;
   width: 100%;
   height: 100px;
 }
-header .row {
+.main-header .row {
   height: 100%;
 }
 
@@ -17441,10 +17445,14 @@ nav .nav-list .text-nav .text-nav-text::after {
   background-color: #584096;
   padding-top: 70px;
   padding-bottom: 60px;
-  height: 100vh;
+  min-height: 100vh;
+}
+.service-cards-container container {
+  height: 100%;
 }
 
 .services-header {
+  height: auto;
   display: flex;
   flex-direction: column;
 }
@@ -17477,6 +17485,36 @@ nav .nav-list .text-nav .text-nav-text::after {
   .services-header span {
     width: 75%;
   }
+}
+
+.service-card {
+  width: 100%;
+  padding-top: 10em;
+  margin-top: 2em;
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  background-color: WHITE;
+  background-size: 100%;
+}
+.service-card__recruitment {
+  background-image: url("../../assets/images/recruitment.jpg");
+}
+.service-card__international {
+  background-image: url("../../assets//images/international.jpg");
+}
+.service-card__support {
+  background-image: url("../../assets/images/bespoke.jpg");
+}
+.service-card-content {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+.service-card-content h3 {
+  padding-top: 1em;
+}
+.service-card-content p {
+  padding-bottom: 1em;
 }
 
 .partnership {

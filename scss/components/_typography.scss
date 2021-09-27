@@ -24,6 +24,12 @@ header {
     }
 }
 
+.service-card {
+    &-content {
+        text-align: center;
+    }
+}
+
 .partnership {
     h2, p {
         text-align: center;
