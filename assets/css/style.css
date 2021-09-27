@@ -16212,7 +16212,7 @@ nav .nav-list .text-nav:hover .text-nav-text {
   transition: color 0.3s ease-in;
 }
 nav .nav-list .text-nav:hover .text-nav-text::after {
-  opacity: 100%;
+  opacity: 1;
   transition: opacity 0.3s ease-in;
 }
 nav .nav-list .text-nav .text-nav-text {
@@ -16222,7 +16222,7 @@ nav .nav-list .text-nav .text-nav-text {
 nav .nav-list .text-nav .text-nav-text::after {
   content: "";
   display: block;
-  opacity: 0%;
+  opacity: 0;
   position: absolute;
   background-color: #584096;
   height: 2px;
