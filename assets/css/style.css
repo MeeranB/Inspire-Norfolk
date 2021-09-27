@@ -16165,6 +16165,7 @@ nav .nav-list .logo-link {
   height: 100%;
 }
 nav .nav-list .logo-image {
+  min-width: 1px;
   height: 80%;
 }
 @media (min-width: 576px) {

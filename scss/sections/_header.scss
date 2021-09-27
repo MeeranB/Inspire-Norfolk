@@ -39,6 +39,7 @@ nav {
                 height: 100%;
             }
             &-image {
+                min-width: 1px;
                 height: 80%;
                 @media (min-width: map-get($grid-breakpoints, "sm" )) {
                     height: 100%;
