@@ -83,7 +83,7 @@ nav {
                 .text-nav-text {
                     transition: color .3s ease-in;
                     &::after {
-                        opacity: 100%;
+                        opacity: 1;
                         transition: opacity .3s ease-in
                     }
                 }
@@ -96,7 +96,7 @@ nav {
                     //Create underline effect for text
                     content: '';
                     display: block;
-                    opacity: 0%;
+                    opacity: 0;
                     position: absolute;
                     background-color: #584096;
                     height: 2px;
