@@ -10022,6 +10022,10 @@ header .nav-list {
   }
 }
 
+.visually-hidden {
+  display: none;
+}
+
 /*!
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -16312,26 +16316,24 @@ nav .nav-list .text-nav .text-nav-text::after {
 }
 
 .service-card {
-  width: 100%;
-  padding-top: 10em;
-  margin-top: 2em;
-  background-repeat: no-repeat;
-  background-position: 50% 0%;
-  background-color: WHITE;
-  background-size: 100%;
+  display: flex;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  flex-direction: column;
+  background-color: white;
 }
-.service-card__recruitment {
+.service-card__recruitment .service-card-image {
   background-image: url("../../assets/images/recruitment.jpg");
 }
-.service-card__international {
+.service-card__international .service-card-image {
   background-image: url("../../assets//images/international.jpg");
 }
-.service-card__support {
+.service-card__support .service-card-image {
   background-image: url("../../assets/images/bespoke.jpg");
 }
 .service-card-content {
   width: 100%;
-  height: 100%;
+  height: auto;
   background-color: white;
 }
 .service-card-content h3 {
@@ -16339,6 +16341,13 @@ nav .nav-list .text-nav .text-nav-text::after {
 }
 .service-card-content p {
   padding-bottom: 1em;
+}
+.service-card-image {
+  padding-top: 68%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  background-image: url("../../assets/images/recruitment.jpg");
 }
 
 .partnership {

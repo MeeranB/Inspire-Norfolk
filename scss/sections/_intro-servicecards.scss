@@ -45,21 +45,25 @@
 }
 
 .service-card {
-    width: 100%;
-    padding-top: 10em;
-    margin-top: 2em;
-    background-repeat: no-repeat;
-    background-position: 50% 0%;
-    background-color: WHITE;
-    background-size: 100%;
+    display: flex;
+    margin-top:3rem;
+    margin-bottom: 3rem;
+    flex-direction: column;
+    background-color: white;
     &__recruitment {
-        background-image: url("../../assets/images/recruitment.jpg");
+        .service-card-image {
+            background-image: url("../../assets/images/recruitment.jpg");
+        }
     }
     &__international {
-        background-image: url("../../assets//images/international.jpg");
+        .service-card-image {
+            background-image: url("../../assets//images/international.jpg");
+        }
     }
     &__support {
-        background-image: url("../../assets/images/bespoke.jpg");
+        .service-card-image {
+            background-image: url("../../assets/images/bespoke.jpg");
+        }
     }
     &-content {
         h3 {
@@ -69,7 +73,14 @@
             padding-bottom: 1em;
         }
         width: 100%;
-        height: 100%;
+        height: auto;
         background-color: white;
+    }
+    &-image {
+        padding-top: 68%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+        background-image: url("../../assets/images/recruitment.jpg");
     }
 }
