@@ -1,0 +1,116 @@
+@use '../custom' as *;
+
+.service-cards-container {
+    background-color: #584096;
+    padding-top: 70px;
+    padding-bottom: 60px;
+    min-height: 100vh;
+    .container {
+        height: 100%;
+    }
+}
+
+.services-header {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    h2 {
+        padding-bottom: 1.5rem;
+        &::after {
+            content: "";
+            display: block;
+            width: 30%;
+            padding-top: 3px;
+            border-bottom: 2px solid #f9dd94;
+          }
+    }
+    @media (min-width: map-get($grid-breakpoints, "md")) {
+        justify-content: space-between;
+        span {
+            padding-top: 8px;
+            width: 70%;
+        }
+    }
+    @media (min-width: map-get($grid-breakpoints, "lg" )) {
+        flex-direction: row;
+        h2 {
+            &::after {
+                width: 70%;
+            }
+        }
+        span {
+            width: 75%;
+        }
+    }
+}
+
+.service-card {
+    display: flex;
+    width: 100%;
+    margin-top:3rem;
+    margin-bottom: 3rem;
+    flex-direction: column;
+    background-color: white;
+    &__recruitment {
+        .service-card-image {
+            background-image: url("../../assets/images/recruitment.jpg");
+        }
+    }
+    &__international {
+        .service-card-image {
+            background-image: url("../../assets//images/international.jpg");
+        }
+    }
+    &__support {
+        .service-card-image {
+            background-image: url("../../assets/images/bespoke.jpg");
+        }
+    }
+    &-content {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        h3 {
+            padding-top: 1em;
+            text-transform: uppercase;
+            font-size: 24px;
+            color: #584096;
+            font-weight: 700;
+        }
+        p {
+            margin-top: auto;
+            padding-bottom: 1em;
+            color: #000;
+            font-size: 17px;
+            font-weight: 400;
+        }
+        padding: 55px 19px 27px;
+        width: 100%;
+        height: auto;
+        background-color: white;
+    }
+    &-image {
+        padding-top: 68%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+        background-image: url("../../assets/images/recruitment.jpg");
+    }
+    .icon-container {
+        width: 92px;
+        height: 92px;
+        position: absolute;
+        top: -60px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        background-color: #584096;
+        i {
+            color: white;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%,50%);
+        }
+    }
+}

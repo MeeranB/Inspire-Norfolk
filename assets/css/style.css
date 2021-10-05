@@ -9937,6 +9937,23 @@ header .nav-list {
   color: #584096;
 }
 
+.services-header {
+  color: white;
+}
+.services-header h2 {
+  padding-top: 0;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.services-header span {
+  font-weight: 300;
+}
+
+.service-card-content {
+  text-align: center;
+}
+
 .partnership h2, .partnership p {
   text-align: center;
 }
@@ -10003,6 +10020,10 @@ header .nav-list {
   .copyright-text {
     font-size: 1rem;
   }
+}
+
+.visually-hidden {
+  display: none;
 }
 
 /*!
@@ -16102,12 +16123,29 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
-header {
+/*!
+ * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../../assets/webfonts/fa-regular-400.eot");
+  src: url("../../assets/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../../assets/webfonts/fa-regular-400.woff2") format("woff2"), url("../../assets/webfonts/fa-regular-400.woff") format("woff"), url("../../assets/webfonts/fa-regular-400.ttf") format("truetype"), url("../../assets/webfonts/fa-regular-400.svg#fontawesome") format("svg");
+}
+.far {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+}
+
+.main-header {
   display: flex;
   width: 100%;
   height: 100px;
 }
-header .row {
+.main-header .row {
   height: 100%;
 }
 
@@ -16148,6 +16186,7 @@ nav .nav-list .logo-link {
   height: 100%;
 }
 nav .nav-list .logo-image {
+  min-width: 1px;
   height: 80%;
 }
 @media (min-width: 576px) {
@@ -16221,10 +16260,7 @@ nav .nav-list .text-nav .text-nav-text::after {
   display: inline-block;
   border: none;
   background: white;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 2rem;
-  padding-right: 10%;
+  padding: 1rem 10% 1rem 2rem;
   margin-left: auto;
   text-decoration: none;
   position: relative;
@@ -16245,6 +16281,147 @@ nav .nav-list .text-nav .text-nav-text::after {
   height: 0.4em;
   background: #584096;
   box-shadow: 0 0.75em 0 0 #584096, 0 1.5em 0 0 #584096;
+}
+
+.service-cards-container {
+  background-color: #584096;
+  padding-top: 70px;
+  padding-bottom: 60px;
+  min-height: 100vh;
+}
+.service-cards-container .container {
+  height: 100%;
+}
+
+.services-header {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.services-header h2 {
+  padding-bottom: 1.5rem;
+}
+.services-header h2::after {
+  content: "";
+  display: block;
+  width: 30%;
+  padding-top: 3px;
+  border-bottom: 2px solid #f9dd94;
+}
+@media (min-width: 768px) {
+  .services-header {
+    justify-content: space-between;
+  }
+  .services-header span {
+    padding-top: 8px;
+    width: 70%;
+  }
+}
+@media (min-width: 992px) {
+  .services-header {
+    flex-direction: row;
+  }
+  .services-header h2::after {
+    width: 70%;
+  }
+  .services-header span {
+    width: 75%;
+  }
+}
+
+.service-card {
+  display: flex;
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  flex-direction: column;
+  background-color: white;
+}
+.service-card__recruitment .service-card-image {
+  background-image: url("../../assets/images/recruitment.jpg");
+}
+.service-card__international .service-card-image {
+  background-image: url("../../assets//images/international.jpg");
+}
+.service-card__support .service-card-image {
+  background-image: url("../../assets/images/bespoke.jpg");
+}
+.service-card-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 55px 19px 27px;
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+.service-card-content h3 {
+  padding-top: 1em;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #584096;
+  font-weight: 700;
+}
+.service-card-content p {
+  margin-top: auto;
+  padding-bottom: 1em;
+  color: #000;
+  font-size: 17px;
+  font-weight: 400;
+}
+.service-card-image {
+  padding-top: 68%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  background-image: url("../../assets/images/recruitment.jpg");
+}
+.service-card .icon-container {
+  width: 92px;
+  height: 92px;
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background-color: #584096;
+}
+.service-card .icon-container i {
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.partnership {
+  margin-top: 56px;
+  margin-bottom: 40px;
+}
+
+.get-in-touch {
+  padding: 30px 0;
+  background-color: #584096;
+}
+.get-in-touch p {
+  margin-bottom: 0;
+}
+.get-in-touch a {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+.get-in-touch a:hover .btn-container {
+  background-color: #584096;
+  border-color: white;
+}
+
+.btn-container {
+  background-color: white;
+  width: 90%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 html, body {
@@ -16283,36 +16460,6 @@ footer {
   padding-left: 0;
   padding-inline-start: 0;
   list-style-type: none;
-}
-
-.partnership {
-  margin-top: 56px;
-  margin-bottom: 40px;
-}
-
-.get-in-touch {
-  padding: 30px 0;
-  background-color: #584096;
-}
-.get-in-touch p {
-  margin-bottom: 0;
-}
-.get-in-touch a {
-  display: flex;
-  justify-content: center;
-  flex-grow: 1;
-}
-.get-in-touch a:hover .btn-container {
-  background-color: #584096;
-  border-color: white;
-}
-
-.btn-container {
-  background-color: white;
-  width: 90%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
