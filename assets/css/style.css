@@ -16123,6 +16123,23 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
+/*!
+ * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../../assets/webfonts/fa-regular-400.eot");
+  src: url("../../assets/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../../assets/webfonts/fa-regular-400.woff2") format("woff2"), url("../../assets/webfonts/fa-regular-400.woff") format("woff"), url("../../assets/webfonts/fa-regular-400.ttf") format("truetype"), url("../../assets/webfonts/fa-regular-400.svg#fontawesome") format("svg");
+}
+.far {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+}
+
 .main-header {
   display: flex;
   width: 100%;
@@ -16243,10 +16260,7 @@ nav .nav-list .text-nav .text-nav-text::after {
   display: inline-block;
   border: none;
   background: white;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 2rem;
-  padding-right: 10%;
+  padding: 1rem 10% 1rem 2rem;
   margin-left: auto;
   text-decoration: none;
   position: relative;
@@ -16332,15 +16346,24 @@ nav .nav-list .text-nav .text-nav-text::after {
   background-image: url("../../assets/images/bespoke.jpg");
 }
 .service-card-content {
+  position: relative;
+  padding: 55px 35px 27px;
   width: 100%;
   height: auto;
   background-color: white;
 }
 .service-card-content h3 {
   padding-top: 1em;
+  text-transform: uppercase;
+  font-size: 26px;
+  color: #584096;
+  font-weight: 700;
 }
 .service-card-content p {
   padding-bottom: 1em;
+  color: #000;
+  font-size: 17px;
+  font-weight: 400;
 }
 .service-card-image {
   padding-top: 68%;
@@ -16348,6 +16371,23 @@ nav .nav-list .text-nav .text-nav-text::after {
   background-size: cover;
   background-position: 50%;
   background-image: url("../../assets/images/recruitment.jpg");
+}
+.service-card .icon-container {
+  width: 92px;
+  height: 92px;
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background-color: #584096;
+}
+.service-card .icon-container i {
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
 }
 
 .partnership {
