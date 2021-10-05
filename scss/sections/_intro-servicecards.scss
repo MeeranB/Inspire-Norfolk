@@ -67,21 +67,24 @@
         }
     }
     &-content {
+        display: flex;
+        flex-direction: column;
         position: relative;
         h3 {
             padding-top: 1em;
             text-transform: uppercase;
-            font-size: 26px;
+            font-size: 24px;
             color: #584096;
             font-weight: 700;
         }
         p {
+            margin-top: auto;
             padding-bottom: 1em;
             color: #000;
             font-size: 17px;
             font-weight: 400;
         }
-        padding: 55px 35px 27px;
+        padding: 55px 19px 27px;
         width: 100%;
         height: auto;
         background-color: white;
