@@ -1,0 +1,157 @@
+@use '../custom' as *;
+
+
+
+.banner-container{
+    height: 700px;
+    background: #584096 none no-repeat center;
+    
+}
+
+.banner-content{
+    position: absolute;
+    z-index: 999999;
+    width: 80%;
+    top: 20%;
+    left: 10%;
+    color: #fff;
+    text-align: center;
+    @media(min-width: map-get($grid-breakpoints, "md")){
+        width: 50%;
+        text-align: left;
+        top: 17%;
+    }
+    @media(min-width: map-get($grid-breakpoints, 'lg')){
+        width: 30%;
+        left: 15%;
+        top: 13%;
+    }
+    @media(min-width:1050px){
+        top: 20%;
+    }
+    h1,
+    h2{
+        text-transform: uppercase;
+    }
+    h1{
+        font-size: 50px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    h2{
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 29px;
+        &:first-child{
+            margin-bottom: 30px;
+        }
+        &:last-child{
+
+        }
+    }
+    p{
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 30px;
+    }
+    button{
+        background-color: transparent;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        color: #fff;
+        width: 80%;
+        height: 56px;
+        font-size: 24px;
+        @media(min-width: map-get($grid-breakpoints, "md")){
+            width: 50%;
+        }
+        @media(min-width: map-get($grid-breakpoints, "lg")){
+            width: 80%;
+        }
+        &:hover{
+            background-color: #fff;
+            color: #584096;
+            text-decoration: underline;
+        }
+    }
+}
+
+.banner-line{
+    background-color: #fff;
+    width: 100%;
+    height: 2px;
+    margin: 27px 0 32px auto;
+}
+
+// Shaping for the banners triangle overlay
+#banner-shapes-container {
+    display: none;
+    position: absolute;
+    top: 100px;
+    height: 700px;
+    left: 40%;
+    overflow-y: clip;
+    z-index: 9999;
+    @media(min-width: map-get($grid-breakpoints, "md")){
+        display: block;
+    }
+    #banner-rectangle {
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: auto;
+      min-width: 40%;
+      width: 40%;
+      background-color: #584096;
+
+      #banner-rectangle-inner {
+        display       : none;
+      }
+      #banner-triangle {
+        position: absolute;
+        top: 0px;
+        left          : 100%;
+        border-top    : calc(700px * .45 + 5px) solid transparent;
+        border-left   : calc(700px * .35) solid #584096;
+        border-bottom : calc(700px * .55 + 5px) solid transparent;
+      }
+      #banner-triangle-outline {
+        position: absolute;
+        top: -10px;
+        left          : 100%;
+        border-top    : calc(700px * .45 + 15px) solid transparent;
+        border-left   : calc(700px * .35 + 5px) solid #fff;
+        border-bottom : calc(700px * .55 + 15px) solid transparent;
+      }
+    }
+}
+
+.banner-image{
+    width: 65%;
+    background-size: cover;
+}
+
+#banner-image-index{
+    background: url('/assets/images/banner-index.jpg') no-repeat 40% center;
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    top: 100px;
+    right: 0;
+    height: 700px;
+    @media(min-width: map-get($grid-breakpoints, "md")){
+        width: 60vw;
+    }
+}
+
+.banner-overlay{
+    display: block;
+    width: 100%;
+    height: 86.2%;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    z-index: 99999;
+    @media(min-width: map-get($grid-breakpoints, "md")){
+        display: none;
+    }
+}

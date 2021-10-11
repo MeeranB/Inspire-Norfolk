@@ -1,0 +1,26 @@
+@use '../custom' as *;
+
+.description {
+    &-inner {
+        margin: 35px auto;
+        border: 1px solid transparent;  // To prevent vertical margin collapse
+        text-align: center;
+    }
+    &-heading {
+      margin: 0;
+      color      : #584096;
+      font-size  : 1.125rem;
+      text-align : center;
+    }
+    &-copy {
+      color      : #666;
+      font-weight: 300;
+      font-size  : .875rem;
+    }
+    &-heading,
+    &-copy {
+      margin     : 15px auto;
+      padding    : 0 15px;
+      line-height: 1.4;
+    }
+  }
