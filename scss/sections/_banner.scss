@@ -6,6 +6,8 @@
     
 }
 
+
+// Section for all content ontop of the banner 
 .banner-content{
     position: absolute;
     z-index: 999999;
@@ -126,6 +128,7 @@
     background-size: cover;
 }
 
+// The banner image should be  univerally able for use across multiple pages
 #banner-image-index{
     background: url('/assets/images/banner-index.jpg') no-repeat 40% center;
     position: absolute;
@@ -139,6 +142,7 @@
     }
 }
 
+// Used as the overlay at mobile size
 .banner-overlay{
     display: block;
     width: 100%;
