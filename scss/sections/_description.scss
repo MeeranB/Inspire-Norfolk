@@ -9,18 +9,21 @@
     &-heading {
       margin: 0;
       color      : #584096;
-      font-size  : 1.125rem;
+      font-size  : 1.75rem;
       text-align : center;
+      font-weight: 600;
     }
     &-copy {
       color      : #666;
       font-weight: 300;
-      font-size  : .875rem;
+      font-size  : 19px;
+      font-weight: 300;
     }
     &-heading,
     &-copy {
       margin     : 15px auto;
       padding    : 0 15px;
       line-height: 1.4;
+      
     }
   }
