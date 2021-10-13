@@ -16664,29 +16664,27 @@ footer {
 .testimonials-container #testimonial-statement {
   font-size: 1.125rem;
   line-height: 1.5rem;
-  height: 150px;
+  height: fit-content;
   display: flex;
   align-items: center;
   padding: 20px;
+}
+@media (min-width: 992px) {
+  .testimonials-container #testimonial-statement {
+    height: 150px;
+  }
 }
 .testimonials-container .testimonials-inner:nth-child(even) {
   background-color: #584096;
   color: #fff;
 }
 
-.avatar {
-  width: 100px;
-  height: 100px;
-}
-
-#statement1 {
-  background: url("/assets/images/avatars/avatar-1.jpg") no-repeat 40% cover;
-}
-#statement2 {
-  background-image: url("/assets/images/avatars/avatar-2.jpg") no-repeat 40% cover;
-}
-#statement3 {
-  ackground-image: url("/assets/images/avatars/avatar-3.jpg") no-repeat 40% cover;
+.statement-person {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-top: 10px;
+  padding-left: 10px;
+  text-transform: capitalize;
 }
 
 /*# sourceMappingURL=style.css.map */
