@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspire Norfolk</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-container">
+        <header class="container-fluid main-header">
+            <div class="container">
+                <div class="row">
+                    <nav class="col-10 col-lg-12">
+                        <ul class="nav-list">
+                            <li class="logo"><a class="logo-link" href="index.html" title="Inspire Norfolk Homepage"><img class="logo-image" src="assets/images/site-logo.jpeg" alt="Inspire Norfolk Logo"></a></li>
+                            <li class="text-nav"><a class="text-nav-link" href="#"><span class="text-nav-text">About Us</span></a></li>
+                            <li class="text-nav"><a class="text-nav-link" href="#"><span class="text-nav-text">Our Services</span></a></li>
+                            <li class="text-nav"><a class="text-nav-link" href="testimonials.html"><span class="text-nav-text">Testimonials</span></a></li>
+                            <li class="text-nav"><a class="text-nav-link" href="contact.html"><span class="text-nav-text">Contact Us</span></a></li>
+                            <li class="phone-nav">
+                                <a class="phone-nav-link" href="#">
+                                    <span class="phone-nav-link-container">
+                                        <span class="icon-container">
+                                            <i class="fas fa-phone fa-flip-horizontal"></i>
+                                        </span>
+                                        01603 670909
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="hamburger-container col-2 d-lg-none">
+                        <button class="hamburger">
+                            <span class="visually-hidden">Mobile hamburger menu</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Banner -->
+        <div class="banner-container">
+            <div class="banner-overlay"></div>
+                <div class="banner-content">
+                    <h1>Inspire <br> Norfolk</h1>
+                    <h2>Apprenticeships In Norfolk</h2>
+                    <div class="banner-line"></div>
+                    <h2>Looking for an apprentice?</h2>
+                    <p>We work with small buisnesses to create apprenticeship positions,
+                    and work with young people to get them into the perfect opportunity.</p>
+                    <button>Contact Us Today</button>
+                </div>
+            
+            <div id="banner-shapes-container">
+                <div id="banner-rectangle">
+                <div id="banner-rectangle-inner"></div>
+                <div id="banner-triangle-outline"></div>
+                <div id="banner-triangle"></div>
+                </div>
+            </div>
+            <div class="banner-image" id="banner-image-index"></div>
+        </div>
+        <div class="form-container">
+            <h2 class="form-title">Get In Touch</h2>
+            <form id="form" class="form-inner">
+
+            <div id="form-name" class="form-input-field">
+                <label>
+                <span class="form-label required-label">Name:</span>
+                <input id="form-name-input" class="text-input required-input" type="text" name="name" placeholder="John Doe">
+                <div class="focus-bar"></div>
+                </label>
+            </div>
+
+            <div id="form-email" class="form-input-field">
+                <label>
+                <span class="form-label required-label">Email Address:</span>
+                <input id="form-email-input" class="text-input required-input" type="email" name="email" placeholder="example@domain.com">
+                <div class="focus-bar"></div>
+                </label>
+            </div>
+
+            <div id="form-phone" class="form-input-field">
+                <label>
+                <span class="form-label">Contact Number:</span>
+                <input id="form-phone-input" class="text-input" type="tel" name="phone" placeholder="07123456789">
+                <div class="focus-bar"></div>
+                </label>
+            </div>
+
+            <div id="form-radio">
+                <label>
+                <span class="form-label required-label">Enquiring about:</span>
+                <div>
+                    <input type="radio" name="enquiryType" value="business" id="form-radio-business">
+                    <label class="radio-label" for="form-radio-business">Business enquiring about apprentices</label>
+                </div>
+                <div>
+                    <input type="radio" name="enquiryType" value="young-person" id="form-radio-young-person">
+                    <label class="radio-label" for="form-radio-young-person">Young person enquiring about apprenticeships</label>
+                </div>
+                <div>
+                    <input type="radio" name="enquiryType" value="other" id="form-radio-other">
+                    <label class="radio-label" for="form-radio-other">Something else</label>
+                </div>
+                </label>
+            </div>
+
+            <div id="form-text">
+                <label>
+                <span class="form-label required-label">Message:</span>
+                <textarea id="form-text-input" class="text-input required-input" type="text" name="message" placeholder="Lorem ipsum..."></textarea>
+                <div class="focus-bar"></div>
+                </label>
+            </div>
+
+            <div id="form-gdpr">
+                <input id="form-gdpr-checkbox" class="required-input" type="checkbox" name="confirmGDPR">
+                <label id="form-gdpr-statement" class="required-label" for="form-gdpr-checkbox">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</label>
+            </div>
+
+            <div id="form-submit">
+                <button
+                id="form-submit-button"
+                class="g-recaptcha"
+                data-sitekey="6LdLz0YaAAAAANKr8Jaa68zNJtqSHdF3x3FBAQl5"
+                data-callback='onSubmit'
+                data-action='submit'
+                type='submit'
+                value='submit'
+                onclick="">Submit enquiry</button>
+                <div id="form-submit-error">
+                <span></span>
+                </div>
+            </div>
+
+            </form>
+        </div>
+
+        <div class="container-fluid get-in-touch">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-8">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                    </div>
+                    <div class="col-12 col-md-4 ml-md-auto mt-4 mt-md-0 d-flex">
+                        <a href="#"><span class="btn btn-container">Find Out More About Us!</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container-fluid">
+                <div class="site-footer container">
+                    <div class="row">
+                        <div class="site-footer-section col-12 col-sm-12 col-md-6 col-lg-4 mb-sm-4">
+                            <h3 class="site-footer-header mb-sm-6">Contact Us</h3>
+                            <ul class="contact-footer">
+                                <li class="contact-title">Inspire Norfolk</li>
+                                <li>info@inspirenorfolk.co.uk</li>
+                                <li>01603 670909</li>
+                            </ul>
+                        </div>
+                        <div class="site-footer-section col-12 col-sm-12 col-md-6 col-lg-4 mb-sm-4">
+                            <h3 class="site-footer-header mb-sm-6">Sections</h3>
+                            <ul class="fa-ul nav-footer">
+                                <li><i class="fa-li fas fa-chevron-right"></i>Our Services</li>
+                                <li><i class="fa-li fas fa-chevron-right"></i>About Us</li>
+                                <li><i class="fa-li fas fa-chevron-right"></i>Testimonials</li>
+                                <li><i class="fa-li fas fa-chevron-right"></i>Terms & Conditions - Privacy Policy</li>
+                            </ul>
+                        </div>
+                        <div class="site-footer-section col-12 col-sm-12 col-md-12 col-lg-4 mb-sm-4">
+                            <h3 class="site-footer-header mb-sm-6">Follow Us On</h3>
+                            <ul class="fa-ul socials-footer">
+                                <li><i class="fa-li fab fa-facebook-square"></i>&nbsp;Facebook</li>
+                                <li><i class="fa-li fab fa-twitter"></i>&nbsp;Twitter</li>
+                                <li><i class="fa-li fab fa-linkedin"></i>&nbsp;LinkedIn</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright container-fluid">
+                <p class="copyright-text">
+                    Copyright &#169; Inspire Norfolk. Web Design Netmatters. All Rights Reserved 2021.
+                </p>
+            </div>
+        </footer>
+    </body>
+    </html>
