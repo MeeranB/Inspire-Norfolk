@@ -56,7 +56,6 @@
         background-color: transparent;
         border: 2px solid #fff;
         border-radius: 5px;
-        color: #fff;
         width: 80%;
         height: 56px;
         font-size: 24px;
@@ -68,8 +67,13 @@
         }
         &:hover{
             background-color: #fff;
-            color: #584096;
-            text-decoration: underline;
+            a{
+                color: #584096;
+                text-decoration: underline;
+            }
+        }
+        a{
+            color:#fff;
         }
     }
 }
@@ -126,11 +130,6 @@
 .banner-image{
     width: 65%;
     background-size: cover;
-}
-
-// The banner image should be  univerally able for use across multiple pages
-#banner-image-index{
-    background: url('/assets/images/banner-index.jpg') no-repeat 40% center;
     position: absolute;
     z-index: 1;
     width: 100vw;
@@ -140,6 +139,23 @@
     @media(min-width: map-get($grid-breakpoints, "md")){
         width: 60vw;
     }
+}
+
+// The banner image should be  univerally able for use across multiple pages
+#banner-image-index{
+    background: url('/assets/images/banner-index.jpg') no-repeat 40% center;
+}
+#banner-image-testimonials{
+    background: url('/assets/images/banner-testimonials.jpg')no-repeat 40% center;
+}
+#banner-image-contact{
+    background: url('/assets/images/banner-contact.jpg')no-repeat 40% center;
+}
+#banner-image-about{
+    background: url('/assets/images/banner-about.jpg')no-repeat 40% center;
+}
+#banner-image-services{
+    background: url('/assets/images/banner-services.jpg')no-repeat 40% center;
 }
 
 // Used as the overlay at mobile size

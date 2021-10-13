@@ -16522,7 +16522,6 @@ footer {
   background-color: transparent;
   border: 2px solid #fff;
   border-radius: 5px;
-  color: #fff;
   width: 80%;
   height: 56px;
   font-size: 24px;
@@ -16539,8 +16538,13 @@ footer {
 }
 .banner-content button:hover {
   background-color: #fff;
+}
+.banner-content button:hover a {
   color: #584096;
   text-decoration: underline;
+}
+.banner-content button a {
+  color: #fff;
 }
 
 .banner-line {
@@ -16595,10 +16599,6 @@ footer {
 .banner-image {
   width: 65%;
   background-size: cover;
-}
-
-#banner-image-index {
-  background: url("/assets/images/banner-index.jpg") no-repeat 40% center;
   position: absolute;
   z-index: 1;
   width: 100vw;
@@ -16607,9 +16607,29 @@ footer {
   height: 700px;
 }
 @media (min-width: 768px) {
-  #banner-image-index {
+  .banner-image {
     width: 60vw;
   }
+}
+
+#banner-image-index {
+  background: url("/assets/images/banner-index.jpg") no-repeat 40% center;
+}
+
+#banner-image-testimonials {
+  background: url("/assets/images/banner-testimonials.jpg") no-repeat 40% center;
+}
+
+#banner-image-contact {
+  background: url("/assets/images/banner-contact.jpg") no-repeat 40% center;
+}
+
+#banner-image-about {
+  background: url("/assets/images/banner-about.jpg") no-repeat 40% center;
+}
+
+#banner-image-services {
+  background: url("/assets/images/banner-services.jpg") no-repeat 40% center;
 }
 
 .banner-overlay {
