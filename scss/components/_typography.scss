@@ -11,6 +11,46 @@ header {
     }
 }
 
+.banner-content {
+    h1,
+    h2{
+        text-transform: uppercase;
+    }
+    h1 {
+        font-size: 2rem;
+        @media (min-width: map-get($grid-breakpoints, "sm" )) {
+            font-size: 50px;
+            font-weight: 700;
+        }
+    }
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 29px;
+        @media (min-width: map-get($grid-breakpoints, "sm" )) {
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 29px;
+        }
+    }
+    p {
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 29px;
+        @media (min-width: map-get($grid-breakpoints, "sm" )) {
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+    button {
+        font-size: 1.2rem;
+        @media (min-width: map-get($grid-breakpoints, "sm" )) {
+            font-size: 24px;
+        }
+    }
+}
+
 .services-header {
     color: white;
     h2 {
